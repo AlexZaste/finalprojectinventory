@@ -51,9 +51,9 @@ class Perishables {
             cout << "For the item " << items[i].name << ", \n\nthe price is: $" << items[i].price << " \n\nand the quantity is: " << items[i].quantity << endl;
 
             float StockWorthperishables = items[i].quantity * items[i].price;
-
+            //calculating stockk worth
             float total = StockWorthperishables + total;
-
+            // adding stock worth to total
             cout << "\nThe total stock worth of this item is $" << StockWorthperishables << endl;
     }
    cout << "\nthe over all worth of perishables stock is :"<< overallstockworthP << "$";
