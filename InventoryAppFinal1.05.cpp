@@ -98,7 +98,7 @@ class Nonperishables{
             cout << "Total stocks are $" << StockWorthNonperishables << endl;
 
             overallstockworthNP= overallstockworthNP+StockWorthNonperishables;
-                                    }
+            }
 
     cout << endl << endl;
 
