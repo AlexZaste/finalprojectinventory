@@ -3,14 +3,14 @@ using namespace std;
 float overallstockworthP = 0;
 class Perishables {
   private:
-      string name;
-      double price;
-      int quantity;
-
+      string name;//declaring string variable      
+      double price;//declaring double variable      
+      int quantity;//declaring int variable
+  
   public:
-    void inventoryStock()
+    void inventoryStock()//a type of function to return nothing    
     {
-    Perishables items[100];
+    Perishables items[100];//maximum number of perishable items to enter    
     int   numItems   = 0;
     float total      = 0;
     float StockWorthperishables = 0;
@@ -18,26 +18,26 @@ class Perishables {
     cout << "How many items you want to enter: ";
     cin  >> numItems;
 
-    for(int i = 0; i < numItems; i++)
+    for(int i = 0; i < numItems; i++)//looping until the numItems you entered is reached    
     {
             cout << endl;
 
             cout << "Enter name of item " << (i + 1) << ": ";
 
-            cin >> items[i].name;
+            cin >> items[i].name; //array of item number/name
 
             cout << "Enter price of item " << (i + 1) << ": $";
 
-            cin >> items[i].price;
+            cin >> items[i].price;//array of prices
 
             cout << "Enter quantity of item " << (i + 1) << ": ";
 
-            cin >> items[i].quantity;
+            cin >> items[i].quantity; //array of quantity
 
             float StockWorthperishables= items[i].quantity * items[i].price;
-
+            //calculates the stock worth            
             float total = StockWorthperishables + total;
-
+            //add stock worth to the final total            
             cout << "Total stocks are $" << StockWorthperishables << endl;
 
             overallstockworthP= overallstockworthP+StockWorthperishables;
@@ -46,7 +46,7 @@ class Perishables {
 
     cout << endl << endl;
 
-    for(int i = 0; i < numItems; i++)
+    for(int i = 0; i < numItems; i++)//a loop to output the summury of inputs under each item    
     {
             cout << "For the item " << items[i].name << ", \n\nthe price is: $" << items[i].price << " \n\nand the quantity is: " << items[i].quantity << endl;
 
@@ -62,13 +62,13 @@ class Perishables {
 float overallstockworthNP = 0;
 class Nonperishables{
   private:
-      string name;
-      double price;
-      int quantity;
+      string name;//declaring string variable      
+      double price;//declaring double variable      
+      int quantity;//declaring int variable
 
   public:
-    void inventoryStock(){
-    Nonperishables items[100];
+    void inventoryStock(){//a type of function to return nothing    
+    Nonperishables items[100];//maximum number of nonperishable items to enter      
     int   numItems   = 0;
     float total      = 0;
     float StockWorthNonperishables = 0;
@@ -76,8 +76,7 @@ class Nonperishables{
     cout << "How many items you want to enter: ";
     cin  >> numItems;
 
-    for(int i = 0; i < numItems; i++){
-
+    for(int i = 0; i < numItems; i++){//looping until the numItems you entered is reached
             cout << endl;
 
             cout << "Enter name of item " << (i + 1) << ": ";
